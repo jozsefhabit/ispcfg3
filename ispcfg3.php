@@ -91,8 +91,8 @@ function ispcfg3_ConfigOptions() {
         'Website Settings' => array(
                     'Type' => 'text',
                     'Size' => '20',
-                    'Description' => 'Syntax: CGI,SSI,Ruby,SuEXEC,ErrorDocuments'
-                                    . ',SSL E.g.: y,y,y,n,y,n'
+                    'Description' => 'Syntax: CGI,SSI,Perl,Ruby,Python,SuEXEC,ErrorDocuments'
+                                    . ',SubDomain,SSL E.g.: y,y,y,n,y,n,n,n,n'
             ),
         'Auto Subdomain' => array(
                     'Type' => 'dropdown',
@@ -539,7 +539,7 @@ function ispcfg3_CreateAccount( $params ) {
                         'active' => 'y',
                         'uid' => $domain_arr['system_user'],
                         'gid' => $domain_arr['system_group'],
-                        'dir' => $domain_arr['document_root'],
+                        'dir' => $domain_arr['document_root'] . 'private',
                         'quota_files' => -1,
                         'ul_ratio' => -1,
                         'dl_ratio' => -1,
