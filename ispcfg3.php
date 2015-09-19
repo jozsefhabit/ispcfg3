@@ -539,7 +539,7 @@ function ispcfg3_CreateAccount( $params ) {
                         'active' => 'y',
                         'uid' => $domain_arr['system_user'],
                         'gid' => $domain_arr['system_group'],
-                        'dir' => $domain_arr['document_root'] . 'private',
+                        'dir' => $domain_arr['document_root'] . '/private',
                         'quota_files' => -1,
                         'ul_ratio' => -1,
                         'dl_ratio' => -1,
