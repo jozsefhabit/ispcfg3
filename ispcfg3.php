@@ -533,7 +533,7 @@ function ispcfg3_CreateAccount( $params ) {
                 $ispcparams = array(
                         'server_id' => $defaultwebserver,
                         'parent_domain_id' => $website_id,
-                        'username' => $username . 'admin',
+                        'username' => $username,
                         'password' => $password,
                         'quota_size' => $webquota,
                         'active' => 'y',
